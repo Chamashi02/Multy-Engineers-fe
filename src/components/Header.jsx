@@ -17,6 +17,7 @@ const Header = () => {
       <nav className="multy-nav">
         <Link to="/" className="active">Home</Link>
         <Link to="/aboutus">About Us</Link>
+        <Link to="/contactus">Contact Us</Link>
       </nav>
     </header>
   );

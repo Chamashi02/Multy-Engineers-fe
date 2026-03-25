@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home"; 
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 import "../src/css/multy.css";
 import { Route, Routes } from "react-router-dom";
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
       </main>
 
