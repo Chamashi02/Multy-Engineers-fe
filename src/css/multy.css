@@ -665,21 +665,94 @@ body {
   line-height: 1.8;
 }
 
-.contact-map {
-  position: relative;
-  height: 600px;
-  overflow: hidden;
+.contact-card {
+  max-width: 1000px;
+  margin: 60px auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.card-left {
+  flex: 1;
+  background: #1e2a47;
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.card-left h3 {
+  margin-bottom: 25px;
+  }
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 15px;;
+}
+
+.info-icon {
+  font-size: 18px;
+}
+
+.card-right {
+  flex: 2;
+  padding: 40px 35px;
+  background: var(--light-bg);
+}
+
+.card-right h3 {
+  margin-bottom: 25px;
+  color: #1e2a47;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 160px;
+  padding: 12px;
+  background: #1e2a47;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
 }
 
 .contact-map iframe {
-  padding: 10px;
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
+  height: 500px;
   border: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
 }
