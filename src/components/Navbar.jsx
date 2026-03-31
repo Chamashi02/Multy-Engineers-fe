@@ -14,9 +14,11 @@ const Navbar = () => {
         </div>
       </a>
 
-      <Link to="/" className="active">Home</Link>
+      <Link to="/">Home</Link>
       <Link to="/aboutus">About Us</Link>
       <Link to="/contact">Contact Us</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/register">Register</Link>
     </nav>
   );
 };

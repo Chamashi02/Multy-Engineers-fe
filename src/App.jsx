@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home"; 
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import "../src/css/multy.css";
 import { Route, Routes } from "react-router-dom";
 
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </main>
 
